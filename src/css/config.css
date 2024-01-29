@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+    .card-container{
+        @apply shadow-[1px_1px_10px_1px_rgba(0,0,0,0.1)] m-8 text-center rounded-3xl p-8
+    }
+    .card-container-lg{
+        @apply lg:flex lg:justify-around lg:items-center lg:text-start lg:mx-28
+    }
+    .card-header{
+        @apply font-headings font-semibold text-2xl text-dark-cyan 
+    }
+    .card-header-lg{
+        @apply font-headings font-bold text-3xl text-dark-cyan 
+    }
+    .card-info{
+        @apply text-dark-blue pb-2 font-body
+    }
+    .pink-button{
+        @apply rounded-full bg-primary-pink font-body font-[700] p-2 mt-4 text-light-cyan shadow-[1px_1px_10px_1px_rgba(0,0,0,0.2)]
+    }
+    .logo{
+        @apply h-3 w-3 mr-4
+    }
+    .sections-footer{
+        @apply mt-4 flex flex-row justify-start items-center font-body
+    }
+}
